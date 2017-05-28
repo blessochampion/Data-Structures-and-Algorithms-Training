@@ -13,13 +13,11 @@ import java.util.Collections;
  * @author Jubril
  */
 public class problem274_hIndex {
-    
+
     public static void main(String[] args) {
-        int[] newValues = {0,1};
-        problem274_hIndex sol = new problem274_hIndex();
-        System.out.println(sol.hIndex(newValues));
+
     }
-    
+
      public int hIndex(int[] citations) {
          Arrays.sort(citations);
          for(int i =0; i < citations.length/2; i++){
@@ -38,5 +36,5 @@ public class problem274_hIndex {
         }
         return val;
     }
-    
+
 }
